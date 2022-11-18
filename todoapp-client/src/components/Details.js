@@ -15,7 +15,29 @@ function Details() {
             <label>Header/navbar</label>
           </p>
         </div>
-        <div id="zadatak-komponenta" className=" container">
+        <div className="container" id="return">
+          <div className="row">
+            <div className="mb-3 mx-auto" style={{ width: "40vw" }}>
+              <button
+                type="button"
+                className="btn btn-sm d-flex btn-outline-secondary"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-caret-left my-auto"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z" />
+                </svg>{" "}
+                Home
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="zadatak-komponenta" className="container">
           <div className="row">
             <p className="mx-auto  mb-1" style={{ width: "40vw" }}>
               <label className="ml-0">Naziv zadatka</label>
@@ -125,7 +147,7 @@ function Details() {
           </div>
         </div>
         <div id="detaljniOpisZadatka">
-          <div className="container mt-2" style={{ width: "40vw" }}>
+          <div className="container mt-2 mb-3" style={{ width: "40vw" }}>
             <div class="form-group">
               <label for="detaljniOpisZadatka" className="pt-1 pb-1">
                 Opis zadatka
@@ -135,6 +157,32 @@ function Details() {
                 id="detaljniOpisZadatka"
                 rows="3"
               ></textarea>
+            </div>
+          </div>
+        </div>
+        <div id="deleteUpdateButtons">
+          <div className="container" style={{ width: "40vw" }}>
+            <div className="mx-auto">
+              <div className="d-flex flex-row-reverse">
+                <div className="mx-3">
+                  {" "}
+                  <button
+                    type="button"
+                    className=" col btn btn-sm btn-outline-secondary"
+                  >
+                    Update
+                  </button>
+                </div>
+                <div>
+                  {" "}
+                  <button
+                    type="button"
+                    className=" col btn btn-sm btn-outline-danger"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
