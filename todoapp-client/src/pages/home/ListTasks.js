@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import data from "../../data/data";
 
 function ListTasks() {
   return (
@@ -11,7 +12,7 @@ function ListTasks() {
     >
       <div className="row">
         <div className="col">
-          <ul
+          <div
             className="list-group"
             style={{
               height: "300px",
@@ -47,7 +48,7 @@ function ListTasks() {
                 </button>
               </span>
             </li>
-          </ul>
+          </div>
         </div>
       </div>
     </div>

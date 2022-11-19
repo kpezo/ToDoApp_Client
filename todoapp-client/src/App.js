@@ -2,30 +2,21 @@ import "./App.css";
 import Details from "./components/Details";
 import Home from "./components/Home";
 import ReactDOM from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Routes,
-  Router,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
       <div className="App">
-        <Home></Home>
-        <Router>
-          <Routes></Routes>
-        </Router>
-        {/* <Router>
+        <BrowserRouter>
+          <Header></Header>
           <Routes>
-            <Route path="/">
-            </Route>
-            <Route path="/details/id">
-              <Details></Details>
-            </Route>
+            <Route path="/" exact element={<Home />}></Route>
+            <Route path="/details/:taskId" element={<Details />}></Route>
+            <Route path="*" element={<Navigate to="/" replace />}></Route>
           </Routes>
-        </Router> */}
+        </BrowserRouter>
       </div>
     </>
   );
