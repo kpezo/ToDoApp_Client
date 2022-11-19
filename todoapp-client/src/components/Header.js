@@ -3,9 +3,10 @@ import React from "react";
 function Header() {
   return (
     <>
-      <p>
-        <label style={{}}>HR</label>
-      </p>
+      <div
+        className="navbar navbar-expand-lg navbar-light bg-light mb-3"
+        style={{ width: "100vw", height: "10vh" }}
+      ></div>
     </>
   );
 }
